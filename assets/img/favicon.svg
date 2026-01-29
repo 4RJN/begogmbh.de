@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="BEGO">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1636"/>
+      <stop offset="1" stop-color="#0b1b40"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="url(#g)"/>
+  <path d="M130 250c40 90 140 165 260 155 20-2 36-20 34-40-2-20-20-36-40-34-82 8-150-42-186-116-8-18-30-26-48-18-18 8-26 30-18 48z" fill="#4eb454"/>
+  <text x="256" y="310" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="270" font-weight="700" fill="#fff">B</text>
+</svg>

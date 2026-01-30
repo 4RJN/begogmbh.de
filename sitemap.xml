@@ -9,7 +9,7 @@ permalink: /sitemap.xml
     {%- if p.url == '/404.html' -%}{%- continue -%}{%- endif -%}
     {%- if p.url contains '/_' -%}{%- continue -%}{%- endif -%}
     {%- if p.name == 'sitemap.xml' -%}{%- continue -%}{%- endif -%}
-    {%- if p.url endswith '.html' or p.url == '/' -%}
+    {%- if p.url == '/' or p.url contains '.html' -%}
   <url>
     <loc>{{ canonical_base }}{{ p.url | replace: 'index.html','' }}</loc>
   </url>

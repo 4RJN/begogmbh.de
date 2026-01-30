@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://begogmbh.de/sitemap.xml
+
+Sitemap: https://4rjn.github.io/begogmbh.de/sitemap.xml

@@ -1,9 +1,8 @@
 (() => {
-  const detectBase = () => (window.location.pathname.startsWith("/begogmbh.de/") ? "/begogmbh.de" : "");
-  const base = detectBase();
+  const base = window.location.pathname.startsWith("/begogmbh.de") ? "/begogmbh.de" : "";
 
   const load = async (name) => {
-    const res = await fetch(`${base}/partials/${name}.html`, { cache: "no-cache" });
+    const res = await fetch(`${base}/partials/${name}.html`, { cache: "no-store" });
     if (!res.ok) throw new Error(`Include ${name} not found (${res.status})`);
     return await res.text();
   };
@@ -20,6 +19,7 @@
       toggle.setAttribute("aria-expanded", "false");
       document.body.classList.remove("menu-open");
     };
+
     const open = () => {
       drawer.hidden = false;
       toggle.setAttribute("aria-expanded", "true");

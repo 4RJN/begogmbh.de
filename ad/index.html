@@ -6,142 +6,352 @@
   <meta name="color-scheme" content="dark" />
   <meta name="theme-color" content="#000000" />
 
-  <title>BEGO Gebäudereinigung GmbH – Film</title>
-  <meta name="description" content="BEGO Gebäudereinigung GmbH – Wasser-Logo Animation. Film ansehen und direkt zur Website." />
+  <title>BEGO Gebäudereinigung GmbH - Ad Vorschau 🔎</title>
+  <meta name="description" content="🌊Wasser. 🎯Präzision. 🧼Sauberkeit. Jetzt Website öffnen." />
 
-  <meta property="og:title" content="BEGO Gebäudereinigung GmbH" />
-  <meta property="og:description" content="Wasser-Logo Animation ansehen und direkt zur Website." />
+  <!-- OG -->
+  <meta property="og:title" content="BEGO Gebäudereinigung GmbH - Ad Vorschau 🔎" />
+  <meta property="og:description" content="🌊Wasser. 🎯Präzision. 🧼Sauberkeit. Jetzt Website öffnen." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://4rjn.github.io/begogmbh.de/ad/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <style>
-    html,body{height:100%}
-    body{margin:0;background:#000;color:#fff;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;overflow-x:hidden}
-    *{box-sizing:border-box}
-    a{color:inherit;text-decoration:none}
-    button{font:inherit}
-    .bg{position:fixed;inset:0;pointer-events:none;z-index:-3;background:
-      radial-gradient(1200px 800px at 50% 30%,rgba(255,255,255,.06),transparent 65%),
-      radial-gradient(900px 600px at 18% 85%,rgba(80,180,255,.07),transparent 60%),
-      radial-gradient(900px 600px at 82% 85%,rgba(0,255,200,.05),transparent 60%),
-      linear-gradient(#000,#000)}
-    .vignette{position:fixed;inset:0;pointer-events:none;z-index:-2;background:
-      radial-gradient(120% 120% at 50% 50%,transparent 55%,rgba(0,0,0,.72) 80%,rgba(0,0,0,.92) 100%)}
-    .grain{position:fixed;inset:-80px;pointer-events:none;z-index:-1;opacity:.10;mix-blend-mode:overlay;
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
-    .wrap{min-height:100%;display:grid;grid-template-rows:1fr auto;isolation:isolate}
-    .hero{display:grid;place-items:center;padding:clamp(16px,3vw,32px);padding-top:max(16px,env(safe-area-inset-top));padding-bottom:clamp(16px,3vw,36px)}
-    .card{width:min(1100px,96vw);border-radius:22px;overflow:hidden;background:rgba(10,10,10,.55);
-      border:1px solid rgba(255,255,255,.08);
-      box-shadow:0 20px 80px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.03) inset;
-      backdrop-filter:blur(10px)}
-    .topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 16px;
-      border-bottom:1px solid rgba(255,255,255,.08);
-      background:linear-gradient(to bottom,rgba(15,15,15,.75),rgba(12,12,12,.45))}
-    .brand{display:flex;align-items:center;gap:10px;min-width:0}
-    .dot{width:10px;height:10px;border-radius:999px;background:radial-gradient(circle at 30% 30%,#bff,#3af 55%,#048 100%);
-      box-shadow:0 0 18px rgba(80,180,255,.35);flex:0 0 auto}
-    .brand h1{margin:0;font-size:14px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.92}
-    .actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid rgba(255,255,255,.10);
-      background:rgba(255,255,255,.06);color:#fff;padding:10px 12px;border-radius:14px;cursor:pointer;
-      user-select:none;-webkit-tap-highlight-color:transparent;transition:transform .15s ease,background .15s ease,border-color .15s ease,opacity .15s ease}
-    .btn:hover{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.16)}
-    .btn:active{transform:translateY(1px) scale(.99)}
-    .btn.primary{background:linear-gradient(135deg,rgba(80,180,255,.22),rgba(0,255,200,.12));
-      border-color:rgba(140,220,255,.25);box-shadow:0 10px 35px rgba(0,0,0,.45)}
-    .btn.primary:hover{background:linear-gradient(135deg,rgba(80,180,255,.28),rgba(0,255,200,.16))}
-    .btn.ghost{background:rgba(0,0,0,.28)}
-    .btn .k{font-size:12px;opacity:.85;border:1px solid rgba(255,255,255,.18);padding:2px 7px;border-radius:999px;background:rgba(0,0,0,.35)}
-    .stage{position:relative;background:#000;aspect-ratio:16/9}
-    .stage video{width:100%;height:100%;display:block;object-fit:cover;background:#000;filter:contrast(1.05) saturate(1.05)}
-    .stage::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:0 0 0 1px rgba(255,255,255,.06) inset}
-    .overlay{position:absolute;inset:0;display:grid;grid-template-rows:1fr auto;pointer-events:none}
-    .center{align-self:center;justify-self:center;text-align:center;max-width:760px;padding:16px;opacity:0;transform:translateY(10px);
-      transition:opacity .25s ease,transform .25s ease}
-    .center.show{opacity:1;transform:translateY(0)}
-    .headline{margin:0 0 10px 0;font-size:clamp(22px,3.2vw,40px);letter-spacing:-.02em;line-height:1.05;
-      text-shadow:0 10px 40px rgba(0,0,0,.7)}
-    .sub{margin:0 0 16px 0;font-size:clamp(14px,1.6vw,18px);opacity:.85;line-height:1.4;
-      text-shadow:0 8px 32px rgba(0,0,0,.75)}
-    .overlayBottom{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 14px 16px 14px;
-      background:linear-gradient(to top,rgba(0,0,0,.72),rgba(0,0,0,.08),transparent)}
-    .pill{pointer-events:auto;display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);background:rgba(0,0,0,.35);backdrop-filter:blur(10px)}
-    .bar{width:min(320px,42vw);height:6px;border-radius:999px;background:rgba(255,255,255,.12);overflow:hidden}
-    .bar>i{display:block;height:100%;width:0%;background:linear-gradient(90deg,rgba(80,180,255,.85),rgba(0,255,200,.85));
-      border-radius:999px;box-shadow:0 0 20px rgba(80,180,255,.25)}
-    .tiny{font-size:12px;opacity:.78;white-space:nowrap}
-    footer{padding:18px 18px max(18px,env(safe-area-inset-bottom));text-align:center;opacity:.72;font-size:12px}
-    footer a{text-decoration:underline;text-decoration-color:rgba(255,255,255,.35)}
-    @media (max-width:640px){.actions .btn{padding:10px 10px}.btn .k{display:none}.bar{width:46vw}}
-    @media (prefers-reduced-motion:reduce){.grain{display:none}.btn,.center{transition:none}}
+    html, body { height: 100%; }
+    body{
+      margin:0;
+      background:#0b0f14;
+      color:#fff;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      overflow-x:hidden;
+    }
+    *{ box-sizing:border-box; }
+    a{ color:inherit; text-decoration:none; }
+    button{ font:inherit; }
+
+    /* Subtle BEGO-ish glow */
+    .bg {
+      position: fixed; inset: 0; z-index: -2; pointer-events:none;
+      background:
+        radial-gradient(900px 550px at 50% 15%, rgba(60,150,255,0.16), transparent 65%),
+        radial-gradient(800px 520px at 20% 85%, rgba(0,220,190,0.10), transparent 60%),
+        radial-gradient(900px 520px at 85% 85%, rgba(40,120,255,0.10), transparent 60%),
+        linear-gradient(#06080b, #0b0f14);
+    }
+    .vignette{
+      position: fixed; inset: 0; z-index: -1; pointer-events:none;
+      background: radial-gradient(120% 120% at 50% 40%, transparent 55%, rgba(0,0,0,0.70) 80%, rgba(0,0,0,0.92) 100%);
+    }
+
+    .wrap{
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    /* YouTube-like top */
+    header{
+      padding: max(12px, env(safe-area-inset-top)) 14px 12px 14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .top{
+      width: min(1100px, calc(100vw - 20px));
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .logoBox{
+      width:36px; height:36px; border-radius:10px;
+      background: linear-gradient(135deg, rgba(60,150,255,0.35), rgba(0,220,190,0.18));
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      display:grid; place-items:center;
+      overflow:hidden;
+      flex:0 0 auto;
+    }
+    /* Optional: wenn du ein echtes Logo hast, lege es als /ad/logo.png ab */
+    .logoBox img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+    .titleWrap{ min-width:0; }
+    .title{
+      margin:0;
+      font-size:14px;
+      font-weight:700;
+      letter-spacing: -0.01em;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .sub{
+      margin:2px 0 0 0;
+      font-size:12px;
+      opacity:.75;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(10px);
+      cursor:pointer;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      flex: 0 0 auto;
+      white-space:nowrap;
+    }
+    .cta:hover{ background: rgba(255,255,255,0.10); border-color: rgba(255,255,255,0.18); }
+    .cta:active{ transform: translateY(1px) scale(0.99); }
+    .cta.primary{
+      background: linear-gradient(135deg, rgba(60,150,255,0.28), rgba(0,220,190,0.14));
+      border-color: rgba(140,220,255,0.22);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.35);
+    }
+
+    main{
+      display:grid;
+      place-items:center;
+      padding: 8px 10px 16px;
+    }
+
+    /* Player container (YouTube-ish) */
+    .playerShell{
+      width: min(1100px, calc(100vw - 20px));
+    }
+    .player{
+      position: relative;
+      border-radius: 18px;
+      overflow:hidden;
+      background:#000;
+      box-shadow: 0 22px 80px rgba(0,0,0,0.65);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .player::after{
+      content:"";
+      position:absolute; inset:0;
+      pointer-events:none;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.05) inset;
+    }
+
+    .stage{
+      position:relative;
+      aspect-ratio: 16 / 9;
+      background:#000;
+    }
+    video{
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit: cover;
+      background:#000;
+    }
+
+    /* Minimal controls: only sound button in corner */
+    .soundBtn{
+      position:absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 5;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.40);
+      backdrop-filter: blur(10px);
+      cursor:pointer;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease, opacity .15s ease;
+    }
+    .soundBtn:hover{ background: rgba(0,0,0,0.55); border-color: rgba(255,255,255,0.22); }
+    .soundBtn:active{ transform: translateY(1px) scale(0.99); }
+    .soundBtn small{ font-size:12px; opacity:.85; }
+
+    /* Progress bottom (like YouTube) */
+    .progressWrap{
+      position:absolute;
+      left:0; right:0; bottom:0;
+      padding: 10px 12px;
+      z-index: 4;
+      background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0.05), transparent);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      pointer-events:none;
+    }
+    .bar{
+      height:4px;
+      border-radius:999px;
+      background: rgba(255,255,255,0.18);
+      overflow:hidden;
+      flex:1 1 auto;
+    }
+    .bar i{
+      display:block;
+      height:100%;
+      width:0%;
+      border-radius:999px;
+      background: linear-gradient(90deg, rgba(60,150,255,0.92), rgba(0,220,190,0.88));
+      box-shadow: 0 0 18px rgba(60,150,255,0.25);
+    }
+    .time{
+      font-size:12px;
+      opacity:.85;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    /* End overlay: only Replay + countdown */
+    .endOverlay{
+      position:absolute; inset:0;
+      display:grid;
+      place-items:center;
+      z-index: 6;
+      background: radial-gradient(900px 600px at 50% 40%, rgba(0,0,0,0.15), rgba(0,0,0,0.80));
+      opacity:0;
+      pointer-events:none;
+      transition: opacity .22s ease;
+      text-align:center;
+      padding: 18px;
+    }
+    .endOverlay.show{
+      opacity:1;
+      pointer-events:auto;
+    }
+    .endCard{
+      width: min(520px, 92vw);
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(0,0,0,0.45);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.65);
+      padding: 18px;
+    }
+    .endTitle{
+      margin:0 0 6px 0;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .endText{
+      margin:0 0 14px 0;
+      font-size: 13px;
+      opacity:.80;
+      line-height:1.4;
+    }
+    .replayBtn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.08);
+      cursor:pointer;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+    }
+    .replayBtn:hover{ background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.20); }
+    .replayBtn:active{ transform: translateY(1px) scale(0.99); }
+
+    footer{
+      padding: 10px 16px max(14px, env(safe-area-inset-bottom));
+      text-align:center;
+      font-size:12px;
+      opacity:.72;
+    }
+    footer a{ text-decoration: underline; text-decoration-color: rgba(255,255,255,0.35); }
+
+    /* Mobile: make it feel like YouTube player filling more of the screen */
+    @media (max-width: 720px){
+      header{ padding-left:10px; padding-right:10px; }
+      .top{ width: calc(100vw - 20px); }
+      .playerShell{ width: calc(100vw - 20px); }
+      .stage{ aspect-ratio: 16 / 10; } /* slightly taller for nicer portrait */
+      video{ object-fit: contain; } /* preserves logo/water, less cropping on mobile */
+      .cta span{ display:none; } /* keep header clean on small screens */
+    }
   </style>
 </head>
 
 <body>
   <div class="bg" aria-hidden="true"></div>
   <div class="vignette" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
 
   <div class="wrap">
-    <main class="hero">
-      <div class="card">
-        <div class="topbar">
-          <div class="brand" title="BEGO Gebäudereinigung GmbH">
-            <span class="dot" aria-hidden="true"></span>
-            <h1>BEGO Gebäudereinigung GmbH</h1>
+    <header>
+      <div class="top">
+        <div class="brand">
+          <div class="logoBox" title="BEGO">
+            <!-- Optional: Lege /ad/logo.png ab -> dann erscheint hier das echte Logo -->
+            <img src="./logo.png" alt="BEGO Logo" onerror="this.style.display='none'; this.parentElement.textContent='B'; this.parentElement.style.fontWeight='900'; this.parentElement.style.opacity='0.9';">
           </div>
-
-          <div class="actions">
-            <button class="btn" id="btnSound" type="button" aria-label="Sound umschalten">
-              🔊 <span id="soundLabel">Sound an</span>
-              <span class="k">S</span>
-            </button>
-
-            <button class="btn ghost" id="btnSkip" type="button" aria-label="Überspringen">
-              ⏭️ <span id="skipLabel">Überspringen</span>
-              <span class="k">Esc</span>
-            </button>
-
-            <a class="btn primary" href="https://4rjn.github.io/begogmbh.de" aria-label="Zur Website">
-              🚀 <span>Website öffnen</span>
-              <span class="k">↵</span>
-            </a>
+          <div class="titleWrap">
+            <p class="title">BEGO Gebäudereinigung GmbH – Ad Vorschau</p>
+            <p class="sub">2 Clips · Wasser-Logo Animation · Tippe für Pause/Play</p>
           </div>
         </div>
 
-        <div class="stage" id="stage">
-          <video id="vid" playsinline muted preload="auto" poster="./poster.webp">
-            <source id="src" src="./ad.mp4" type="video/mp4">
-          </video>
+        <a class="cta primary" href="https://4rjn.github.io/begogmbh.de" aria-label="Website öffnen">
+          🚀 <span>Website öffnen</span>
+        </a>
+      </div>
+    </header>
 
-          <div class="overlay">
-            <div class="center" id="prompt">
-              <h2 class="headline">Wasser. Präzision. Sauberkeit.</h2>
-              <p class="sub" id="subline">
-                Tippe ins Video für <strong>Sound</strong>. Danach automatische Weiterleitung.
-              </p>
+    <main>
+      <div class="playerShell">
+        <div class="player" id="player">
+          <div class="stage" id="stage">
+            <video id="vid" playsinline muted preload="auto" poster="./poster.webp">
+              <source src="./ad.mp4" type="video/mp4">
+            </video>
 
-              <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;pointer-events:auto;">
-                <button class="btn primary" id="btnPlay" type="button">▶️ Abspielen</button>
-                <button class="btn" id="btnReplay" type="button">🔁 Replay</button>
+            <button class="soundBtn" id="btnSound" type="button" aria-label="Sound umschalten">
+              🔊 <small id="soundLabel">Sound an</small>
+            </button>
+
+            <div class="progressWrap" aria-hidden="true">
+              <div class="bar"><i id="prog"></i></div>
+              <div class="time" id="time">0:00</div>
+            </div>
+
+            <div class="endOverlay" id="end">
+              <div class="endCard">
+                <p class="endTitle">Fertig.</p>
+                <p class="endText" id="endText">Weiterleitung zur Website in 4s …</p>
+                <button class="replayBtn" id="btnReplay" type="button">🔁 Replay</button>
               </div>
             </div>
 
-            <div class="overlayBottom">
-              <div class="pill" title="Fortschritt">
-                <span class="tiny" id="clipLabel">Clip 1/2</span>
-                <div class="bar" aria-hidden="true"><i id="prog"></i></div>
-                <span class="tiny" id="time">0:00</span>
-              </div>
-
-              <div class="pill" style="gap:8px;">
-                <span class="tiny" id="status">Auto-Start (stumm) …</span>
-              </div>
-            </div>
           </div>
         </div>
 
+        <div style="display:flex; gap:10px; justify-content:space-between; align-items:center; margin-top:10px; opacity:.78; font-size:12px;">
+          <div id="clipLabel">Clip 1/2</div>
+          <div>Tippe aufs Video = Pause/Play</div>
+        </div>
       </div>
     </main>
 
@@ -153,34 +363,32 @@
   </div>
 
   <script>
-    (function () {
-      const TARGET = "https://4rjn.github.io/begogmbh.de";
+    (function(){
+      const SITE_URL = "https://4rjn.github.io/begogmbh.de";
 
-      const playlist = [
+      const video = document.getElementById('vid');
+      const stage = document.getElementById('stage');
+      const btnSound = document.getElementById('btnSound');
+      const soundLabel = document.getElementById('soundLabel');
+      const prog = document.getElementById('prog');
+      const time = document.getElementById('time');
+      const end = document.getElementById('end');
+      const endText = document.getElementById('endText');
+      const btnReplay = document.getElementById('btnReplay');
+      const clipLabel = document.getElementById('clipLabel');
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const clips = [
         { src: "./ad.mp4", poster: "./poster.webp", label: "Clip 1/2" },
         { src: "./ad2.mp4", poster: "./poster2.webp", label: "Clip 2/2" },
       ];
+      let clipIndex = 0;
 
-      const video = document.getElementById('vid');
-      const source = document.getElementById('src');
-      const stage = document.getElementById('stage');
-
-      const btnSound = document.getElementById('btnSound');
-      const soundLabel = document.getElementById('soundLabel');
-      const btnSkip = document.getElementById('btnSkip');
-      const skipLabel = document.getElementById('skipLabel');
-
-      const btnPlay = document.getElementById('btnPlay');
-      const btnReplay = document.getElementById('btnReplay');
-
-      const prompt = document.getElementById('prompt');
-      const prog = document.getElementById('prog');
-      const time = document.getElementById('time');
-      const status = document.getElementById('status');
-      const clipLabel = document.getElementById('clipLabel');
-      const subline = document.getElementById('subline');
-
-      document.getElementById('year').textContent = new Date().getFullYear();
+      let userActivatedSound = false;
+      let countdownTimer = null;
+      let redirectTimer = null;
+      let countdownLeft = 4;
 
       const pad2 = (n) => String(n).padStart(2, '0');
       const fmt = (t) => {
@@ -190,176 +398,132 @@
         return `${m}:${pad2(s)}`;
       };
 
-      let idx = 0;
-      let userActivatedSound = false;
-      let countdownTimer = null;
-
-      function setStatus(txt) { status.textContent = txt; }
-
-      function clearCountdown() {
-        if (countdownTimer) {
-          clearInterval(countdownTimer);
-          countdownTimer = null;
-        }
-        skipLabel.textContent = "Überspringen";
+      function clearRedirect(){
+        if (redirectTimer) { clearTimeout(redirectTimer); redirectTimer = null; }
+        if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
+        countdownLeft = 4;
       }
 
-      function goNow() {
-        window.location.href = TARGET;
-      }
-
-      function startCountdown(seconds) {
-        clearCountdown();
-        let left = seconds;
-        skipLabel.textContent = `Weiter in ${left}s`;
-        countdownTimer = setInterval(() => {
-          left -= 1;
-          if (left <= 0) {
-            clearCountdown();
-            goNow();
-            return;
-          }
-          skipLabel.textContent = `Weiter in ${left}s`;
-        }, 1000);
-      }
-
-      function setClip(i) {
-        idx = i;
-        const item = playlist[idx];
-
-        clipLabel.textContent = item.label;
-        clearCountdown();
-
-        video.pause();
-        video.currentTime = 0;
-        video.setAttribute("poster", item.poster);
-        source.src = item.src;
-        video.load();
-
-        // keep mute state consistent
-        video.muted = !userActivatedSound;
-        updateUI();
-      }
-
-      function updateUI() {
+      function updateUI(){
         const d = video.duration || 0;
         const c = video.currentTime || 0;
-        const p = d ? Math.min(100, Math.max(0, (c / d) * 100)) : 0;
+        const p = d ? Math.min(100, Math.max(0, (c/d)*100)) : 0;
         prog.style.width = p.toFixed(2) + "%";
         time.textContent = fmt(c);
-
-        if (video.paused || video.ended) prompt.classList.add('show');
-        else prompt.classList.remove('show');
-
         soundLabel.textContent = video.muted ? "Sound an" : "Sound aus";
       }
 
-      async function tryAutoplayMuted() {
-        video.muted = true;
-        try {
+      function loadClip(i){
+        clipIndex = i;
+        const c = clips[clipIndex];
+
+        clearRedirect();
+        end.classList.remove('show');
+
+        video.pause();
+        video.muted = !userActivatedSound;
+        video.setAttribute("poster", c.poster);
+
+        // swap source
+        video.innerHTML = `<source src="${c.src}" type="video/mp4">`;
+        video.load();
+        clipLabel.textContent = c.label;
+        updateUI();
+      }
+
+      async function safePlayAutoplay(){
+        try{
           await video.play();
-          setStatus("Spielt (stumm)");
-        } catch (e) {
-          setStatus("Tippe zum Start");
-          prompt.classList.add('show');
+          // plays muted by default
+        }catch(e){
+          // ignore – user can still tap
         }
         updateUI();
       }
 
-      async function toggleSound() {
-        if (video.muted) {
+      async function toggleSound(){
+        clearRedirect();
+        end.classList.remove('show');
+
+        if (video.muted){
           userActivatedSound = true;
           video.muted = false;
-          try {
-            await video.play();
-            setStatus("Spielt (mit Sound)");
-          } catch (e) {
+          try{
+            await video.play(); // may still fail in some browsers until user gesture
+          }catch(e){
+            // If blocked, keep muted and label will reflect it
             video.muted = true;
-            userActivatedSound = false;
-            setStatus("Sound benötigt Tap");
-            prompt.classList.add('show');
           }
-        } else {
+        }else{
           video.muted = true;
-          setStatus("Spielt (stumm)");
         }
         updateUI();
       }
 
-      async function play(preferSound) {
-        if (preferSound) {
-          userActivatedSound = true;
-          video.muted = false;
-        }
-        try {
-          await video.play();
-          setStatus(video.muted ? "Spielt (stumm)" : "Spielt (mit Sound)");
-        } catch (e) {
-          setStatus("Tippe zum Start");
-        }
-        updateUI();
+      function scheduleRedirect(){
+        clearRedirect();
+        countdownLeft = 4;
+        end.classList.add('show');
+        endText.textContent = `Weiterleitung zur Website in ${countdownLeft}s …`;
+
+        countdownTimer = setInterval(() => {
+          countdownLeft--;
+          if (countdownLeft <= 0){
+            clearRedirect();
+            window.location.href = SITE_URL;
+          } else {
+            endText.textContent = `Weiterleitung zur Website in ${countdownLeft}s …`;
+          }
+        }, 1000);
       }
 
-      function replayAll() {
-        clearCountdown();
-        subline.innerHTML = 'Tippe ins Video für <strong>Sound</strong>. Danach automatische Weiterleitung.';
-        setClip(0);
-        play(true);
+      function replay(){
+        clearRedirect();
+        end.classList.remove('show');
+        video.currentTime = 0;
+        safePlayAutoplay();
       }
 
-      // Tap on stage: play/pause, first intent enables sound
+      // Tap on video = pause/play (YouTube-like)
       stage.addEventListener('click', async () => {
-        if (video.paused || video.ended) {
-          if (video.muted) userActivatedSound = true;
-          await play(true);
+        clearRedirect();
+        end.classList.remove('show');
+
+        if (video.paused || video.ended){
+          try { await video.play(); } catch(e) {}
         } else {
           video.pause();
-          setStatus("Pausiert");
-          updateUI();
         }
-      }, { passive: true });
-
-      btnSound.addEventListener('click', (e) => { e.stopPropagation(); toggleSound(); });
-      btnSkip.addEventListener('click', (e) => { e.stopPropagation(); goNow(); });
-      btnPlay.addEventListener('click', (e) => { e.stopPropagation(); play(true); });
-      btnReplay.addEventListener('click', (e) => { e.stopPropagation(); replayAll(); });
-
-      video.addEventListener('timeupdate', updateUI);
-      video.addEventListener('pause', updateUI);
-      video.addEventListener('play', updateUI);
-
-      video.addEventListener('ended', async () => {
         updateUI();
+      }, { passive:true });
 
-        if (idx < playlist.length - 1) {
-          setStatus("Nächster Clip …");
-          subline.innerHTML = "Weiter mit <strong>Clip 2</strong> – danach automatische Weiterleitung.";
-          setClip(idx + 1);
-          // attempt to continue; if sound was activated, keep it
-          await play(false);
-          return;
-        }
-
-        setStatus("Fertig – Weiterleitung …");
-        subline.innerHTML = "Fertig. Du wirst automatisch weitergeleitet – oder tippe <strong>Überspringen</strong>.";
-        prompt.classList.add('show');
-        updateUI();
-
-        startCountdown(4);
+      btnSound.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleSound();
       });
 
-      // Keyboard: S sound, Enter open, Esc skip
-      window.addEventListener('keydown', (e) => {
-        const k = e.key;
-        if (k.toLowerCase() === 's') toggleSound();
-        if (k === 'Enter') goNow();
-        if (k === 'Escape') goNow();
+      btnReplay.addEventListener('click', (e) => {
+        e.stopPropagation();
+        replay();
+      });
+
+      video.addEventListener('timeupdate', updateUI);
+      video.addEventListener('loadedmetadata', updateUI);
+      video.addEventListener('ended', () => {
+        updateUI();
+        if (clipIndex < clips.length - 1){
+          loadClip(clipIndex + 1);
+          safePlayAutoplay(); // autoplay next clip (muted)
+        } else {
+          scheduleRedirect(); // show replay + countdown
+        }
       });
 
       // Init
-      setClip(0);
-      prompt.classList.add('show');
-      tryAutoplayMuted();
+      loadClip(0);
+      // Autoplay everywhere (portrait + landscape) - muted
+      video.muted = true;
+      safePlayAutoplay();
     })();
   </script>
 </body>

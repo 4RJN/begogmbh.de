@@ -1,0 +1,18 @@
+---
+layout: "default"
+title: "Default"
+description: "Angebot & Infos – BEGO Gebäudereinigung Ludwigsburg."
+show_breadcrumbs: False
+---
+<!DOCTYPE html>
+<html lang="de">
+<head>
+{% include head.html %}
+</head>
+<body>
+{% include header.html %}
+{% if page.show_breadcrumbs %}{% include breadcrumbs.html %}{% endif %}
+{{ content }}
+{% include footer.html %}
+</body>
+</html>

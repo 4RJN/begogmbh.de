@@ -5,36 +5,32 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
-  <meta name="description" content="Professionelle Gebäudereinigung in Ludwigsburg: Unterhaltsreinigung, Grundreinigung, Glasreinigung, Industriereinigung und Hausmeisterservice – zuverlässig & umweltbewusst."/>
+  <meta name="description" content="BEGO Gebäudereinigung GmbH in Ludwigsburg: Gebäudereinigung, Industriereinigung, Glas- & Fensterreinigung und Hausmeisterservice – gründlich, zuverlässig & umweltbewusst."/>
   <meta name="robots" content="index,follow"/>
 
+  <!-- Canonical + OG sollten absolut sein (sonst zeigen manche Tools kein OG Bild) -->
   <link rel="canonical" href="https://4rjn.github.io/begogmbh.de/"/>
 
-  <!-- Open Graph -->
   <meta property="og:locale" content="de_DE"/>
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="BEGO Gebäudereinigung in Ludwigsburg"/>
-  <meta property="og:description" content="Professionelle Gebäudereinigung in Ludwigsburg – zuverlässig & umweltbewusst."/>
+  <meta property="og:description" content="Gründlich, zuverlässig und umweltbewusst – Gebäudereinigung, Industrie, Glas & Hausmeisterservice."/>
   <meta property="og:url" content="https://4rjn.github.io/begogmbh.de/"/>
   <meta property="og:site_name" content="BEGO Gebäudereinigung GmbH"/>
   <meta property="og:image" content="https://4rjn.github.io/begogmbh.de/assets/img/og-image.png"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="theme-color" content="#0a1636"/>
 
-  <!-- Icons -->
   <link rel="icon" href="/begogmbh.de/assets/img/favicon.svg" type="image/svg+xml"/>
   <link rel="icon" href="/begogmbh.de/assets/img/favicon-32.png" sizes="32x32" type="image/png"/>
   <link rel="apple-touch-icon" href="/begogmbh.de/assets/img/favicon-180.png"/>
 
-  <!-- CSS -->
   <link rel="preload" as="style" href="/begogmbh.de/assets/css/styles.css"/>
   <link rel="stylesheet" href="/begogmbh.de/assets/css/styles.css"/>
 
-  <!-- Hero preload -->
   <link
     rel="preload"
     as="image"
@@ -45,6 +41,62 @@
       /begogmbh.de/assets/img/hero-1200.webp 1200w,
       /begogmbh.de/assets/img/hero-1920.webp 1920w"
   />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization","LocalBusiness"],
+        "@id": "https://4rjn.github.io/begogmbh.de#organization",
+        "name": "BEGO Gebäudereinigung GmbH",
+        "url": "https://4rjn.github.io/begogmbh.de",
+        "email": "info@begogmbh.de",
+        "telephone": "+49 7141 9117870",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strombergstraße 21",
+          "postalCode": "71636",
+          "addressLocality": "Ludwigsburg",
+          "addressRegion": "Baden-Württemberg",
+          "addressCountry": "DE"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
+        "sameAs": ["https://maps.app.goo.gl/QeTogCj4YE5aZ6Hc7"],
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://4rjn.github.io/begogmbh.de/assets/img/favicon-512.png"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://4rjn.github.io/begogmbh.de#website",
+        "url": "https://4rjn.github.io/begogmbh.de",
+        "name": "BEGO Gebäudereinigung GmbH",
+        "publisher": { "@id": "https://4rjn.github.io/begogmbh.de#organization" },
+        "inLanguage": "de-DE"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://4rjn.github.io/begogmbh.de/#webpage",
+        "url": "https://4rjn.github.io/begogmbh.de/",
+        "name": "BEGO Gebäudereinigung in Ludwigsburg",
+        "description": "BEGO Gebäudereinigung GmbH in Ludwigsburg – gründlich, zuverlässig und umweltbewusst.",
+        "isPartOf": { "@id": "https://4rjn.github.io/begogmbh.de#website" },
+        "about": { "@id": "https://4rjn.github.io/begogmbh.de#organization" },
+        "inLanguage": "de-DE",
+        "dateModified": "2026-01-30"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -55,141 +107,322 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Startseite">
         <picture class="logo-pic">
           <source srcset="/begogmbh.de/assets/img/logo.webp" type="image/webp"/>
-          <img src="/begogmbh.de/assets/img/logo.png" alt="BEGO Gebäudereinigung Logo" width="170" height="44"/>
+          <img src="/begogmbh.de/assets/img/logo.png" alt="BEGO Gebäudereinigung Logo" width="170" height="44" loading="eager"/>
         </picture>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" data-nav>
         <a href="ueber-uns.html">Über uns</a>
         <a href="dienstleistungen.html">Dienstleistungen</a>
         <a href="partner.html">Partner</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
 
-      <button class="btn menu-btn" aria-label="Menü öffnen">Menü</button>
+      <div class="actions">
+        <button class="btn menu-btn" type="button" aria-label="Menü öffnen" aria-expanded="false" data-menu-btn>Menü</button>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- ================= MAIN ================= -->
 <main id="content">
 
-<!-- HERO -->
-<section class="hero">
-  <picture>
-    <source
-      type="image/webp"
-      sizes="100vw"
-      srcset="
-        /begogmbh.de/assets/img/hero-800.webp 800w,
-        /begogmbh.de/assets/img/hero-1200.webp 1200w,
-        /begogmbh.de/assets/img/hero-1920.webp 1920w">
-    <img
-      src="/begogmbh.de/assets/img/hero-1200.webp"
-      alt="Gebäudereinigung in Ludwigsburg"
-      width="1920"
-      height="731"
-      loading="eager">
-  </picture>
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <picture>
+      <source
+        type="image/webp"
+        sizes="100vw"
+        srcset="
+          /begogmbh.de/assets/img/hero-800.webp 800w,
+          /begogmbh.de/assets/img/hero-1200.webp 1200w,
+          /begogmbh.de/assets/img/hero-1920.webp 1920w">
+      <img
+        src="/begogmbh.de/assets/img/hero-1200.webp"
+        alt="BEGO Gebäudereinigung in Ludwigsburg – umweltbewusst und zuverlässig"
+        width="1920"
+        height="731"
+        loading="eager">
+    </picture>
 
-  <div class="bg"></div>
+    <div aria-hidden="true" class="bg"></div>
 
-  <div class="container content">
-    <span class="badge">Familienunternehmen seit 1993</span>
-    <h1>Gebäudereinigung in Ludwigsburg – gründlich, zuverlässig, umweltbewusst.</h1>
-    <p>
-      BEGO steht für die Vereinbarkeit von Umweltschutz und Sauberkeit.
-      Wir reinigen Immobilien, Anlagen und Glasflächen mit klaren Abläufen
-      und persönlicher Betreuung.
-    </p>
+    <div class="container content">
+      <span class="badge">BEGO GmbH</span>
+      <h1>Herzlich Willkommen</h1>
 
-    <div class="actions">
-      <a class="btn primary" href="kontakt.html#anfrage">Angebot anfragen</a>
-      <a class="btn ghost" href="dienstleistungen.html">Leistungen ansehen</a>
+      <p>
+        <strong>BEGO GMBH</strong> steht für die Vereinbarkeit von Umweltschutz und Sauberkeit.
+        Ein nachhaltiges Verantwortungsbewusstsein für unseren Planeten ist uns ein besonderes Anliegen,
+        damit auch unsere Kinder in einer gesunden Umgebung aufwachsen können.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="kontakt.html#anfrage">Angebot anfragen</a>
+        <a class="btn ghost" href="dienstleistungen.html">Leistungen ansehen</a>
+      </div>
+
+      <div class="kpis" aria-label="Schnellkontakt">
+        <div class="kpi">📞 <strong>Anrufen</strong></div>
+        <div class="kpi"><a href="tel:+4971419117870">07141 9117870</a></div>
+      </div>
     </div>
+  </section>
 
-    <div class="kpis">
-      <div class="kpi">✅ Über 30 Jahre Erfahrung</div>
-      <div class="kpi">✅ Termintreu & flexibel</div>
-      <div class="kpi">✅ Umweltfreundliche Prozesse</div>
+  <!-- ================= LEISTUNGEN (Cards klickbar, Grid bleibt stabil) ================= -->
+  <section class="section alt">
+    <div class="container">
+      <h2 class="h2">Unsere Leistungen</h2>
+      <p class="lead">Vom regelmäßigen Reinigungsplan bis zur Spezialreinigung – wir passen Umfang und Taktung an Ihr Objekt an.</p>
+
+      <div class="grid cards">
+
+        <a href="/begogmbh.de/leistungen/gebaeudereinigung.html" class="card pad" aria-label="Gebäudereinigung ansehen">
+          <h3>Gebäudereinigung</h3>
+          <p>Gründlich, zuverlässig und umweltfreundlich</p>
+        </a>
+
+        <a href="/begogmbh.de/leistungen/industriereinigung.html" class="card pad" aria-label="Industriereinigung ansehen">
+          <h3>Industriereinigung</h3>
+          <p>Effiziente Reinigung für Produktions- und Lagerhallen</p>
+        </a>
+
+        <a href="/begogmbh.de/leistungen/glas-fensterreinigung.html" class="card pad" aria-label="Glas- und Fensterreinigung ansehen">
+          <h3>Glas- &amp; Fensterreinigung</h3>
+          <p>Für klare und glänzende Sicht</p>
+        </a>
+
+        <a href="/begogmbh.de/leistungen/hausmeisterservice.html" class="card pad" aria-label="Hausmeisterservice ansehen">
+          <h3>Hausmeisterservice</h3>
+          <p>Rundum-Betreuung Ihrer Immobilie</p>
+        </a>
+
+        <article class="card wide">
+          <div aria-hidden="true" class="media">
+            <picture>
+              <source
+                type="image/webp"
+                sizes="(max-width:900px) 100vw, 50vw"
+                srcset="/begogmbh.de/assets/img/services-800.webp 800w, /begogmbh.de/assets/img/services-1200.webp 1200w"/>
+              <img src="/begogmbh.de/assets/img/services-1200.webp" width="1200" height="900" loading="lazy" alt=""/>
+            </picture>
+            <div class="shade"></div>
+          </div>
+          <div class="pad" style="padding:22px">
+            <h3>Alles aus einer Hand</h3>
+            <p>Klare Zuständigkeiten, kurze Wege und saubere Dokumentation. So bleibt Ihre Immobilie dauerhaft gepflegt – ohne Stress.</p>
+          </div>
+        </article>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- LEISTUNGEN -->
-<section class="section alt">
-  <div class="container">
-    <h2 class="h2">Unsere Leistungen</h2>
-    <p class="lead">
-      Vom regelmäßigen Reinigungsplan bis zur Spezialreinigung – wir passen Umfang
-      und Taktung an Ihr Objekt an.
-    </p>
+  <!-- ================= BEGO FAMILIE ================= -->
+  <section class="section">
+    <div class="container">
+      <span class="badge">Familienunternehmen seit 1993</span>
+      <h2 class="h2">BEGO Familie</h2>
 
-    <div class="grid cards">
+      <p class="lead">
+        Die BEGO Gebäudereinigung GmbH ist ein inhabergeführtes Familienunternehmen in dritter Generation – mit über 30 Jahren Erfahrung in der professionellen Gebäudereinigung.
+      </p>
 
-      <a href="/begogmbh.de/leistungen/gebaeudereinigung.html" class="card pad">
-        <h3>Gebäudereinigung</h3>
-        <p>Gründliche Reinigung für gewerbliche und private Objekte – zuverlässig und planbar.</p>
-      </a>
+      <div class="grid cards">
+        <article class="card wide">
+          <div class="media">
+            <picture>
+              <source
+                type="image/webp"
+                sizes="(max-width:900px) 100vw, 55vw"
+                srcset="/begogmbh.de/assets/img/team-800.webp 800w, /begogmbh.de/assets/img/team-1200.webp 1200w"/>
+              <img src="/begogmbh.de/assets/img/team-1200.webp" width="1200" height="800" loading="lazy" alt="BEGO Teamfoto"/>
+            </picture>
+            <div class="shade" style="background:linear-gradient(90deg,rgba(10,22,54,.15),rgba(10,22,54,.7))"></div>
+          </div>
 
-      <a href="/begogmbh.de/leistungen/industriereinigung.html" class="card pad">
-        <h3>Industriereinigung</h3>
-        <p>Effiziente Reinigung für Produktions- und Lagerbereiche.</p>
-      </a>
+          <div class="pad" style="padding:22px">
+            <p>Wir stehen für klare Strukturen, flache Hierarchien und verlässliche Abläufe.</p>
+            <p>Seit 1993 übernehmen wir Verantwortung – für unsere Kunden, unsere Mitarbeitenden und unsere Umwelt.</p>
+            <p>Von unserer langjährigen Erfahrung profitieren Sie durch verlässliche Qualität, persönliche Betreuung und ein sauberes Ergebnis, das überzeugt.</p>
+            <p><strong>Wir freuen uns darauf, auch Sie bald zu unseren zufriedenen Kunden zählen zu dürfen.</strong></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-      <a href="/begogmbh.de/leistungen/glas-fensterreinigung.html" class="card pad">
-        <h3>Glas- & Fensterreinigung</h3>
-        <p>Streifenfreie Glasreinigung inklusive Rahmen und Falze.</p>
-      </a>
+  <!-- ================= PARTNER ================= -->
+  <section class="section alt">
+    <div class="container">
+      <h2 class="h2">Unsere Partner</h2>
+      <p class="lead">
+        Langjährige Partnerschaften sind die Grundlage unseres Erfolgs.<br/>
+        Wir arbeiten mit zuverlässigen Lieferanten, regionalen Dienstleistern und namhaften Unternehmen zusammen,
+        die unsere Werte – Qualität, Nachhaltigkeit und Fairness – teilen.
+      </p>
 
-      <a href="/begogmbh.de/leistungen/hausmeisterservice.html" class="card pad">
-        <h3>Hausmeisterservice</h3>
-        <p>Kontrolle, Pflege, Kleinreparaturen und Koordination.</p>
-      </a>
+      <div class="grid cards">
+        <article class="card pad">
+          <h3>Gemeinsam schaffen wir Lösungen</h3>
+          <p>BEGO steht für die Vereinbarkeit von Umweltschutz und Sauberkeit.</p>
+        </article>
 
-      <article class="card wide">
-        <div class="media">
-          <picture>
-            <source type="image/webp" srcset="/begogmbh.de/assets/img/services-800.webp 800w, /begogmbh.de/assets/img/services-1200.webp 1200w">
-            <img src="/begogmbh.de/assets/img/services-1200.webp" width="1200" height="900" loading="lazy" alt="">
-          </picture>
-          <div class="shade"></div>
+        <article class="card pad">
+          <h3>Regional & verlässlich</h3>
+          <p>Kurze Wege, planbare Abläufe und abgestimmte Prozesse – für konstant hohe Qualität.</p>
+        </article>
+
+        <article class="card pad">
+          <h3>Qualität & Fairness</h3>
+          <p>Unsere Partner teilen unseren Anspruch: sauber, termintreu, nachhaltig.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WARUM BEGO ================= -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2">Warum sollten Sie sich für uns entscheiden?</h2>
+      <p class="lead">
+        Seit über 30 Jahren stehen wir für Qualität, Zuverlässigkeit und umweltbewusstes Handeln.
+        Als familiengeführtes Unternehmen verbinden wir modernes Know-how mit persönlicher Betreuung.
+      </p>
+
+      <div class="grid cards">
+        <article class="card pad">
+          <h3>Erfahrung &amp; zufriedene Kunden</h3>
+          <p>Mit über drei Jahrzehnten Branchenerfahrung bieten wir höchste Reinigungsqualität und langfristige Partnerschaften.</p>
+        </article>
+
+        <article class="card pad">
+          <h3>Nachhaltig &amp; verantwortungsbewusst</h3>
+          <p>Unsere Reinigungsmittel und Prozesse sind umweltfreundlich – für Sauberkeit mit Rücksicht auf Mensch und Natur.</p>
+        </article>
+
+        <article class="card pad">
+          <h3>Zuverlässig &amp; flexibel</h3>
+          <p>Wir arbeiten termingerecht, gründlich und individuell auf Ihre Anforderungen abgestimmt.</p>
+        </article>
+
+        <article class="card pad">
+          <h3>Unser Team</h3>
+          <p>Ihre persönliche Ansprechpartner – direkt, erreichbar und lösungsorientiert.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROZESS ================= -->
+  <section class="section alt">
+    <div class="container">
+      <h2 class="h2">Unser Arbeitsprozess</h2>
+      <p class="lead">Anfrage bis Übergabe – transparent, planbar und sauber dokumentiert.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="n">01</div>
+          <h4>Anfrage &amp; Beratung</h4>
+          <p>Sie kontaktieren uns telefonisch oder über unser Kontaktformular. Wir beraten Sie individuell und unverbindlich.</p>
         </div>
-        <div class="pad">
-          <h3>Alles aus einer Hand</h3>
-          <p>Klare Zuständigkeiten, kurze Wege und saubere Dokumentation.</p>
-        </div>
-      </article>
 
+        <div class="step">
+          <div class="n">02</div>
+          <h4>Besichtigung &amp; Angebot</h4>
+          <p>Nach Wunsch sehen wir uns das Objekt persönlich an und erstellen ein transparentes, faires Angebot.</p>
+        </div>
+
+        <div class="step">
+          <div class="n">03</div>
+          <h4>Reinigung &amp; Qualitätssicherung</h4>
+          <p>Unser erfahrenes Team führt die Reinigung zuverlässig und sorgfältig durch – selbstverständlich mit umweltfreundlichen Reinigungsmitteln.</p>
+        </div>
+
+        <div class="step">
+          <div class="n">04</div>
+          <h4>Zufriedene Kunden</h4>
+          <p>Wir übergeben das Ergebnis termingerecht und prüfen gemeinsam, ob alles zu Ihrer Zufriedenheit ist. Das ist unsere höchste Priorität.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- ================= KONTAKT ================= -->
+  <section class="section">
+    <div class="container">
+      <h2 class="h2">Kontakt</h2>
+      <p class="lead">Ludwigsburg – wir sind schnell erreichbar und beraten Sie gerne.</p>
+
+      <div class="grid cards">
+        <article class="card pad">
+          <h3>Direkt erreichen</h3>
+          <p>
+            <strong>Telefon:</strong> <a href="tel:+4971419117870">07141 9117870</a><br/>
+            <strong>Ort:</strong> Ludwigsburg
+          </p>
+          <p style="margin-top:10px;color:var(--muted)">
+            Nutzen Sie auch gerne unser <a href="kontakt.html#anfrage">Anfrageformular</a>.
+          </p>
+        </article>
+
+        <article class="card pad">
+          <h3>Schnellnavigation</h3>
+          <p style="display:grid;gap:8px;margin:0">
+            <a href="partner.html">Partner</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container">
-    <picture class="logo-pic">
-      <source srcset="/begogmbh.de/assets/img/logo.webp" type="image/webp"/>
-      <img src="/begogmbh.de/assets/img/logo.png" alt="BEGO Gebäudereinigung Logo" width="170" height="44"/>
-    </picture>
+    <div class="grid">
+      <div>
+        <picture class="logo-pic">
+          <source srcset="/begogmbh.de/assets/img/logo.webp" type="image/webp"/>
+          <img src="/begogmbh.de/assets/img/logo.png" alt="BEGO Gebäudereinigung Logo" width="170" height="44" loading="eager"/>
+        </picture>
 
-    <p class="small">
-      Familienunternehmen seit 1993 – professionelle Gebäudereinigung in Ludwigsburg.
-    </p>
+        <p class="small">Familienunternehmen seit 1993 – professionelle Gebäudereinigung in Ludwigsburg und Umgebung.</p>
 
-    <div class="small">
-      📍 Strombergstraße 21, 71636 Ludwigsburg<br>
-      ☎️ <a href="tel:+4971419117870">+49 7141 9117870</a><br>
-      ✉️ <a href="mailto:info@begogmbh.de">info@begogmbh.de</a>
+        <div class="small">
+          📍 Strombergstraße 21, 71636 Ludwigsburg<br/>
+          ☎️ <a href="tel:+4971419117870">07141 9117870</a><br/>
+          ✉️ <a href="mailto:info@begogmbh.de">info@begogmbh.de</a>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-weight:800;margin-bottom:10px">Navigation</div>
+        <div class="small" style="display:grid;gap:8px">
+          <a href="index.html">Startseite</a>
+          <a href="dienstleistungen.html">Dienstleistungen</a>
+          <a href="partner.html">Partner</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-weight:800;margin-bottom:10px">Rechtliches</div>
+        <div class="small" style="display:grid;gap:8px">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
     </div>
 
     <div class="hr"></div>
-    <div class="small">© 2026 BEGO Gebäudereinigung GmbH</div>
+    <div class="small">© 2026 BEGO Gebäudereinigung GmbH. Alle Rechte vorbehalten.</div>
   </div>
 </footer>
 

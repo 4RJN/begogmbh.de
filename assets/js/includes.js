@@ -1,11 +1,5 @@
 (() => {
-  const detectBase = () => {
-    // Works for: https://4rjn.github.io/begogmbh.de/...
-    const m = window.location.pathname.match(/^(\/[^\/]+)\//);
-    // If repo is served under /begogmbh.de, use it; otherwise empty
-    return window.location.pathname.startsWith("/begogmbh.de/") ? "/begogmbh.de" : "";
-  };
-
+  const detectBase = () => (window.location.pathname.startsWith("/begogmbh.de/") ? "/begogmbh.de" : "");
   const base = detectBase();
 
   const load = async (name) => {
@@ -15,29 +9,29 @@
   };
 
   const initMenu = () => {
-    const btn = document.querySelector(".menu-toggle");
-    const nav = document.getElementById("site-nav");
-    if (!btn || !nav) return;
+    const toggle = document.querySelector(".menu-toggle");
+    const drawer = document.getElementById("site-drawer");
+    if (!toggle || !drawer) return;
+
+    const closeEls = drawer.querySelectorAll("[data-menu-close]");
 
     const close = () => {
-      nav.hidden = true;
-      btn.setAttribute("aria-expanded", "false");
+      drawer.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
     };
     const open = () => {
-      nav.hidden = false;
-      btn.setAttribute("aria-expanded", "true");
+      drawer.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      document.body.classList.add("menu-open");
     };
 
-    btn.addEventListener("click", (e) => {
+    toggle.addEventListener("click", (e) => {
       e.preventDefault();
-      (nav.hidden ? open : close)();
+      drawer.hidden ? open() : close();
     });
 
-    document.addEventListener("click", (e) => {
-      if (nav.hidden) return;
-      if (e.target === btn || btn.contains(e.target) || nav.contains(e.target)) return;
-      close();
-    });
+    closeEls.forEach(el => el.addEventListener("click", (e) => { e.preventDefault(); close(); }));
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") close();

@@ -478,11 +478,12 @@
       }
 
       function replay(){
-        clearRedirect();
-        end.classList.remove('show');
-        video.currentTime = 0;
-        safePlayAutoplay();
-      }
+  clearRedirect();
+  end.classList.remove('show');
+
+  loadClip(0);
+  setTimeout(() => safePlayAutoplay(), 50);
+}
 
       // Tap on video = pause/play (YouTube-like)
       stage.addEventListener('click', async () => {

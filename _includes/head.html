@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Head"
+show_breadcrumbs: false
+---
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="x-apple-disable-message-reformatting">
@@ -30,15 +36,16 @@
 
 <meta name="theme-color" content="{{ site.theme_color | default: '#0b2f5b' }}">
 
-<link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicon-180.png">
-<link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+<link rel="icon" href="{{ site.github.baseurl }}/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ site.github.baseurl }}/assets/img/favicon-180.png">
+<link rel="manifest" href="{{ site.github.baseurl }}/site.webmanifest">
 
-<link rel="preload" href="{{ site.baseurl }}/assets/css/style.css" as="style">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+<link rel="preload" href="{{ site.github.baseurl }}/assets/css/style.css" as="style">
+<link rel="stylesheet" href="{{ site.github.baseurl }}/assets/css/style.css">
 
 {%- if page.noindex -%}
 <meta name="robots" content="noindex,nofollow">
 {%- endif -%}
 
 {% include schema_org.html %}
+

@@ -1,12 +1,19 @@
+---
+layout: default
+title: "Breadcrumbs"
+show_breadcrumbs: false
+---
+
 {%- assign here = page.url | remove: "index.html" -%}
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <ol>
-    <li><a href="{{ site.baseurl }}/">Startseite</a></li>
+    <li><a href="{{ site.github.baseurl }}/">Startseite</a></li>
     {%- if here contains '/leistungen/' -%}
-      <li><a href="{{ site.baseurl }}/dienstleistungen.html">Leistungen</a></li>
+      <li><a href="{{ site.github.baseurl }}/dienstleistungen.html">Leistungen</a></li>
       <li aria-current="page">{{ page.breadcrumb_title | default: page.title | default: "Leistung" }}</li>
     {%- else -%}
       <li aria-current="page">{{ page.breadcrumb_title | default: page.title | default: "Seite" }}</li>
     {%- endif -%}
   </ol>
 </nav>
+

@@ -486,16 +486,22 @@
 
       // Tap on video = pause/play (YouTube-like)
       stage.addEventListener('click', async () => {
-        clearRedirect();
-        end.classList.remove('show');
+  clearRedirect();
+  end.classList.remove('show');
 
-        if (video.paused || video.ended){
-          try { await video.play(); } catch(e) {}
-        } else {
-          video.pause();
-        }
-        updateUI();
-      }, { passive:true });
+  // ✅ Beim ersten Tap: Sound aktivieren (wenn User nicht schon aktiv hatte)
+  if (!userActivatedSound) {
+    userActivatedSound = true;
+    video.muted = false;
+  }
+
+  if (video.paused || video.ended){
+    try { await video.play(); } catch(e) {}
+  } else {
+    video.pause();
+  }
+  updateUI();
+}, { passive:true });
 
       btnSound.addEventListener('click', (e) => {
         e.stopPropagation();
